@@ -1,0 +1,10 @@
+requests
+pycryptodome
+curl_cffi 
+aiohttp
+fastapi
+browser_cookie3
+uvicorn
+js2py
+quickjs 
+
