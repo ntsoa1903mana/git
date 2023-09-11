@@ -1,6 +1,5 @@
 # Use the desired Python base image
-FROM python:3.10.12-slim-bullseye
-
+FROM python: 3.10.11
 # Set the working directory
 WORKDIR /main
 
