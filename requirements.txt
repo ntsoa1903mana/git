@@ -7,4 +7,6 @@ browser_cookie3
 uvicorn
 js2py
 quickjs 
-
+PyExecJS
+quart
+dotenv
