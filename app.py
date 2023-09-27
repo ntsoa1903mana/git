@@ -23,7 +23,7 @@ PROVIDERS = [
         g4f.Provider.EasyChat,
         g4f.Provider.Equing,
         g4f.Provider.GetGpt,
-        g4f.Provider.H2o,
+
         g4f.Provider.HuggingChat,
         g4f.Provider.Opchatgpts,
         g4f.Provider.OpenAssistant,
@@ -37,7 +37,7 @@ PROVIDERS = [
 ]
 
 # Define the default provider and GPT-3.5 Turbo model
-DEFAULT_PROVIDER = g4f.Provider.H2o
+DEFAULT_PROVIDER = g4f.Provider.Vercel
 GPT_MODEL = None
 
 # Initialize the current provider with the default provider
