@@ -31,7 +31,7 @@ PROVIDERS = [
         g4f.Provider.Raycast,
         g4f.Provider.Theb,
         g4f.Provider.Vercel,
-        g4f.Provider.Wewordle,
+
         g4f.Provider.Wuguokai,
         g4f.Provider.You,
 ]
