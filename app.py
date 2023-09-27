@@ -12,22 +12,32 @@ app = FastAPI()
 
 # Define a list of providers to choose from
 PROVIDERS = [
-    g4f.Provider.Vercel,
-    g4f.Provider.CodeLinkAva,#  
-    g4f.Provider.Aivvm, #
-    g4f.Provider.DeepAi,#  
-    g4f.Provider.ChatBase,
-    g4f.Provider.Ails,#
-    g4f.Provider.CodeLinkAva,#
-    g4f.Provider.Acytoo,
-    g4f.Provider.Opchatgpts,#
-    g4f.Provider.Ylokh,
-    g4f.Provider.Wewordle,#
-    g4f.Provider.Yqcloud,##
+        g4f.Provider.Acytoo,
+        g4f.Provider.Aichat,
+        g4f.Provider.Ails,
+        g4f.Provider.Bard,
+        g4f.Provider.Bing,
+        g4f.Provider.ChatgptAi,
+        g4f.Provider.ChatgptLogin,
+        g4f.Provider.DeepAi,
+        g4f.Provider.EasyChat,
+        g4f.Provider.Equing,
+        g4f.Provider.GetGpt,
+        g4f.Provider.H2o,
+        g4f.Provider.HuggingChat,
+        g4f.Provider.Opchatgpts,
+        g4f.Provider.OpenAssistant,
+        g4f.Provider.OpenaiChat,
+        g4f.Provider.Raycast,
+        g4f.Provider.Theb,
+        g4f.Provider.Vercel,
+        g4f.Provider.Wewordle,
+        g4f.Provider.Wuguokai,
+        g4f.Provider.You,
 ]
 
 # Define the default provider and GPT-3.5 Turbo model
-DEFAULT_PROVIDER = g4f.Provider.Wewordle
+DEFAULT_PROVIDER = g4f.Provider.H2o
 GPT_MODEL = None
 
 # Initialize the current provider with the default provider
