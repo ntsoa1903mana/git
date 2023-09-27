@@ -8,5 +8,4 @@ uvicorn
 js2py
 quickjs 
 PyExecJS
-quart
-dotenv
+
