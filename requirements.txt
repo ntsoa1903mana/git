@@ -1,16 +1,4 @@
 requests
 fastapi
 uvicorn
-quickjs 
-requests
-pycryptodome
-curl_cffi
-aiohttp
-certifi
-browser_cookie3
-websockets
-js2py
-flask
-flask-cors
-typing-extensions
-PyExecJS
+g4f==0.1.4.5
