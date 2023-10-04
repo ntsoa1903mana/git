@@ -1,5 +1,5 @@
 requests
 fastapi
 uvicorn
-g4f==0.1.4.5
+g4f==0.1.4.6
 colorama
