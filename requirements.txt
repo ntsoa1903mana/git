@@ -1,5 +1,5 @@
 requests
-fastapi
-uvicorn
+fastapi==0.103.1
+uvicorn==0.23.2
 g4f==0.1.5.8
 colorama
