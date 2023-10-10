@@ -34,7 +34,7 @@ g4f.Provider.Ylokh,
 
 
 # Define the default provider and GPT-3.5 Turbo model
-DEFAULT_PROVIDER = g4f.Provider.Aivvm
+DEFAULT_PROVIDER = g4f.Provider.Acytoo
 GPT_MODEL = None
 
 # Initialize the current provider with the default provider
