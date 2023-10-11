@@ -29,12 +29,13 @@ g4f.Provider.FreeGpt,
 g4f.Provider.Myshell,
 g4f.Provider.Vitalentum,
 g4f.Provider.Ylokh,
+g4f.Provider.Cromicle
 ]
 
 
 # Define the default provider and GPT-3.5 Turbo model
 DEFAULT_PROVIDER = g4f.Provider.Aivvm
-#GPT_MODEL = None
+GPT_MODEL = None
 
 # Initialize the current provider with the default provider
 GPT_PROVIDER = DEFAULT_PROVIDER
@@ -91,7 +92,7 @@ async def home():
 
 @app.post("/generate-response")
 async def generate_response(data: dict):
-#    model = "gpt-3.5-turbo"
+    model = "gpt-3.5-turbo"
     try:
         fbid = data.get("fbid", "")
         user_message = data.get("prompt", "")
