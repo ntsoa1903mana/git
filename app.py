@@ -23,7 +23,7 @@ async def generate_response(fbid, prompt):
     user_prompt = prompt  # Note: There's a syntax error in your code, extra quotation mark (")
     response = openai.Completion.create(
         model="text-davinci-003",
-        prompt=user_prompt,
+        prompt="generate an answer with value and longer if needed: " + user_prompt ,
         temperature=0.7,
         max_tokens=256,
         top_p=1,
