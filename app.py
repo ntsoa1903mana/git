@@ -19,8 +19,8 @@ class PromptRequest(BaseModel):
     prompt: str
     fbid: str
 
-def generate_response(fbid, prompt):
-    user_prompt = f"Human: {prompt}\nAI:"
+async def generate_response(fbid, prompt):
+    user_prompt = prompt  # Note: There's a syntax error in your code, extra quotation mark (")
     response = openai.Completion.create(
         model="text-davinci-002",
         prompt=user_prompt,
@@ -37,12 +37,14 @@ def generate_response(fbid, prompt):
 async def handle_generate_response(prompt_request: PromptRequest):
     user_prompt = prompt_request.prompt
     fbid = prompt_request.fbid
-    response_text = generate_response(fbid, user_prompt)
-    return {"response": response_text}
+    response_text = await generate_response(fbid, user_prompt)
+    return {"fbid": fbid, "response": response_text}
+
 @app.get("/")
 async def home():
     print("Home endpoint reached")
     return {"message": "openAI"}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
