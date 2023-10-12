@@ -1,5 +1,5 @@
 requests
 fastapi==0.103.1
 uvicorn
-g4f==0.1.5.8
+openai==0.28.1
 colorama
